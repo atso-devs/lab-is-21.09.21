@@ -1,4 +1,8 @@
 function labOne() {
+	function myLog(num, base) {
+		return Math.log(num) / Math.log(base);
+	}
+
 	function taskOne() {
 		//константа, хранящая в себе значения переменных из таблицы
 		const tableOne = [
@@ -68,16 +72,17 @@ function labOne() {
 			{ id: 3, n: 52, t: 60, s: 30 },
 		];
 
+		//подсчет результатов
+		function countRezult(countLetters, time, second) {
+			const countVariant = time * second;
+			const rezult = myLog(countVariant, countLetters);
+
+			return rezult.toFixed(4);
+		}
+
 		//заполнение таблицы
 		function fillingTable() {
 			const tableElement = document.querySelector('#table-1-2');
-
-			function countRezult(countLetters, time, second) {
-				const countVariant = time * second;
-				const rezult = Math.log10(countVariant);
-
-				return rezult.toFixed(4);
-			}
 
 			function createStr(item) {
 				let tr = document.createElement('tr');
