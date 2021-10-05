@@ -60,7 +60,49 @@ function labOne() {
 		fillingTable();
 	}
 
+	function taskTwo() {
+		//константа, хранящая в себе значения переменных из таблицы
+		const tableTwo = [
+			{ id: 1, n: 33, t: 100, s: 100 },
+			{ id: 2, n: 26, t: 120, s: 13 },
+			{ id: 3, n: 52, t: 60, s: 30 },
+		];
+
+		//заполнение таблицы
+		function fillingTable() {
+			const tableElement = document.querySelector('#table-1-2');
+
+			function countRezult(countLetters, time, second) {
+				const countVariant = time * second;
+				const rezult = Math.log10(countVariant);
+
+				return rezult.toFixed(4);
+			}
+
+			function createStr(item) {
+				let tr = document.createElement('tr');
+
+				tr.innerHTML = `
+				<th scope="row">${item.id}</th>
+				<td>${item.n}</td>
+				<td>${item.t}</td>
+				<td>${item.s}</td>
+				<td>${countRezult(item.n, item.t, item.s)}</td>
+			`;
+
+				tableElement.querySelector('tbody').append(tr);
+			}
+
+			tableTwo.forEach(function (item, index) {
+				createStr(item);
+			});
+		}
+
+		fillingTable();
+	}
+
 	taskOne();
+	taskTwo();
 }
 
 export default labOne;
