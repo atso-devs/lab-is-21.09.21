@@ -1,3 +1,5 @@
 /node_modules
 /.vscode
 /.jshinttrc
+/js/bundle.js
+/js/bundle.js.map
