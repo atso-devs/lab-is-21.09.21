@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Лабораторные работы по Информационной безопасности</title>
-	<meta name="description" content="Работа Александра Рассудихина, студента первого курса КазАТИСО. Специальность: ВТопк.">
+	<meta name="description"
+		content="Работа Александра Рассудихина, студента первого курса КазАТИСО. Специальность: ВТопк.">
 
 	<!-- Bootstrap -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+		crossorigin="anonymous"></script>
 </head>
+
 <body>
 	<header>
 		<h3 class="text-center my-3">Информационная безопасность. Лабораторные работы Рассудихина Александра.</h3>
@@ -19,15 +25,20 @@
 	<main class="container my-5">
 		<div class="accordion" id="accordionExample">
 			<div class="accordion-item">
-			  	<h2 class="accordion-header" id="headingOne">
-					<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				<h2 class="accordion-header" id="headingOne">
+					<button class="accordion-button" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
 						Лабораторная работа #1
 					</button>
-			  	</h2>
-				<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+				</h2>
+				<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+					data-bs-parent="#accordionExample">
 					<div class="accordion-body">
 						<div>
-							<div><p><strong>Задание №1.</strong> Определить время перебора всех паролей с параметрами.</p></div>
+							<div>
+								<p><strong>Задание №1.</strong> Определить время перебора всех паролей с параметрами.
+								</p>
+							</div>
 							<div>
 								<table class="table table-hover" id="table-1-1">
 									<thead>
@@ -46,7 +57,9 @@
 							</div>
 						</div>
 						<div>
-							<div><p><strong>Задание №2.</strong> Определить минимальную длину пароля. </p></div>
+							<div>
+								<p><strong>Задание №2.</strong> Определить минимальную длину пароля. </p>
+							</div>
 							<div>
 								<table class="table table-hover" id="table-1-2">
 									<thead>
@@ -61,65 +74,69 @@
 									<tbody></tbody>
 								</table>
 							</div>
-						</div>	
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="accordion-item">
 				<h2 class="accordion-header" id="headingThree">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 						Лабораторная работа #3
 					</button>
 				</h2>
-				<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+				<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+					data-bs-parent="#accordionExample">
 					<div class="accordion-body">
-						<p> <strong>Задание:</strong> Составьте алгоритмическое и программное обеспечение:</p>
-						<ol>
-							<li>Процедур шифрования и расшифрования с использованием шифра Цезаря при вводе с клавиатуры ключа и исходного или зашифрованного текста. Учтите регистр вводимого текста.</li>
-							<li>Процедур шифрования и расшифрования с использованием шифра Цезаря при вводе с клавиатуры ключа и текстового файла. Учтите регистр вводимого текста.</li>
-							<li>Процедур шифрования и расшифрования с использованием шифра Вижинера при вводе с клавиатуры ключа и исходного или зашифрованного текста. Учтите регистр вводимого текста.</li>
-							<li>Процедур шифрования и расшифрования с использованием шифра Вижинера при вводе с клавиатуры ключа и текстового файла. Учтите регистр вводимого текста.</li>
-							<li>Постройте программно таблицу Вижинера и выведите в файл.</li>
-						</ol>
+						<p> <strong>Задание:</strong> Шифрование\Дешифровка с помощью шифра Цезаря</p>
 					</div>
 					<div class="row p-3">
 						<div class="form-floating mb-3 col-md-12">
-							<input type="number" class="form-control" id="InputKey" placeholder="key">
+							<input type="number" class="form-control" id="inputKey" placeholder="key">
 							<label class="mx-3" for="InputKey">Key</label>
 						</div>
 						<div class="row">
 							<div class="col">
 								<div class="form-floating">
-									<textarea class="form-control" placeholder="Leave a comment here" id="inputText" style="height: 200px"></textarea>
+									<textarea class="form-control" placeholder="Leave a comment here" id="inputText"
+										style="height: 200px"></textarea>
 									<label for="inputText">Input Text</label>
-								  </div>
+								</div>
 							</div>
 							<div class="col">
 								<div class="form-floating">
-									<textarea class="form-control" placeholder="Leave a comment here" id="outputText" style="height: 200px"></textarea>
+									<textarea class="form-control" placeholder="Leave a comment here" id="outputText"
+										style="height: 200px"></textarea>
 									<label for="outputText">Output Text</label>
-								  </div>
+								</div>
 							</div>
 						</div>
 						<div class="row my-3">
 							<div class="col text-end">
-								<button type="button" class="btn btn-primary">Зашифровать.</button>
+								<button type="button" class="btn btn-primary" id="encrypt">Зашифровать.</button>
 							</div>
-							
+
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
 			<div class="accordion-item">
 				<h2 class="accordion-header" id="headingThree">
-					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 						Лабораторная работа #4
 					</button>
 				</h2>
-				<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+				<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+					data-bs-parent="#accordionExample">
 					<div class="accordion-body">
-						<strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+						<strong>This is the third item's accordion body.</strong> It is hidden by default, until the
+						collapse plugin adds the appropriate classes that we use to style each element. These classes
+						control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+						modify any of this with custom CSS or overriding our default variables. It's also worth noting
+						that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+						does limit overflow.
 					</div>
 				</div>
 			</div>
@@ -128,4 +145,5 @@
 
 	<script src="js/bundle.js"></script>
 </body>
+
 </html>
