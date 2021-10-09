@@ -6,22 +6,26 @@ function labThree() {
 	const inputKey = document.querySelector('#inputKey'),
 		inputText = document.querySelector('#inputText'),
 		outputText = document.querySelector('#outputText'),
-		encrypt = document.querySelector('#encrypt');
+		encrypt = document.querySelector('#encrypt'),
+		decrypt = document.querySelector('#decrypt');
 	let pos = 0;
 
-	function shiftLetter(pos, key) {
-		if ((pos + key) < alphabet.length) {
-			console.log('Не туда');
-			console.log(pos);
-			console.log(key);
-			return alphabet[pos+key];
-		} else {
-			let newPos = ((pos + key) - alphabet.length);
-			console.log(pos);
-			console.log(key);
-			console.log(newPos);
-			return alphabet[newPos];
+	function shiftLetter(pos, key, method) {
+		if (method === 'encrypt') {
+			if ((pos + key) < alphabet.length) {
+				return alphabet[pos+key];
+			} else {
+				let newPos = ((pos + key) - alphabet.length);
+				return alphabet[newPos];
+			}
+		} else if (method === 'decrypt') {
+			if (((pos - key) < alphabet.length) && ((pos - key) >= 0)) {
+				return alphabet[pos-key];
+			} else if (((pos - key) < alphabet.length) && ((pos - key) < 0)) {
+				return alphabet[(pos-key)+alphabet.length];
+			}
 		}
+		
 	}
 
 	function contains(symb, arr) {
@@ -43,7 +47,24 @@ function labThree() {
 			if (!(contains(inputStr[i], alphabet))) {
 				rezult = rezult + inputStr[i];
 			} else {
-				rezult = rezult + shiftLetter(pos, key);
+				rezult = rezult + shiftLetter(pos, key, 'encrypt');
+			}
+		}
+
+		outputText.value = rezult;
+	});
+
+	decrypt.addEventListener('click', () => {
+		let inputStr = inputText.value,
+			key = +inputKey.value;
+
+		let rezult = '';
+
+		for (let i = 0; i < inputStr.length; i++) {
+			if (!(contains(inputStr[i], alphabet))) {
+				rezult = rezult + inputStr[i];
+			} else {
+				rezult = rezult + shiftLetter(pos, key, 'decrypt');
 			}
 		}
 
