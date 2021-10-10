@@ -6,6 +6,8 @@ authors = ["Alexey <alexbit.dev@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+pycipher = "^0.5.2"
+rsa = "^4.7.2"
 
 [tool.poetry.dev-dependencies]
 
